@@ -1,0 +1,13 @@
+
+
+Доступные Urls для обращения к Api
+
+127.0.0.1:8000/api/user/quiz/all                                                #список активных опросов
+127.0.0.1:8000/api/user/quiz/{id_quiz}?post_user={user_id}    get   post       #прохождение опроса
+127.0.0.1:8000/api/user/quiz/detail/{user_id}      get                         # детализация по всем пройденным опросам пользователя
+
+
+# admin
+127.0.0.1:8000/api/adm/quiz/{quiz_id}                post  delete   put
+127.0.0.1:8000/api/adm/quiz/question/{question_id}     post   delete    put   # детализация по вопросу(поля ответов)
+                                                                               создание удаление и обновление опросов
